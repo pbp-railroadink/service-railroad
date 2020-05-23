@@ -16,6 +16,7 @@ plugins:
 provider:
   name: aws
   runtime: nodejs12.x
+  timeout: 5 # In seconds
   region: ${opt:region, 'us-east-1'}
   apiGateway:
     minimumCompressionSize: 1024 # Enable gzip compression for responses > 1 KB
@@ -33,9 +34,9 @@ provider:
       Resource: "*"
 
 functions:
-  hello:
-    handler: src/handler.hello
+  roll:
+    handler: src/get-roll.handler
     events:
       - http:
           method: get
-          path: hello
+          path: roll
