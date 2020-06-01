@@ -27,3 +27,4 @@ env.yml
 !jest.config.js
 !webpack.config.js
 !source-map-install.js
+!.eslintrc.js
