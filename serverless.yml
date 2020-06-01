@@ -16,6 +16,12 @@ plugins:
 provider:
   name: aws
   runtime: nodejs12.x
+  region: us-east-1
+  memorySize: 128 # Max memory
+  timeout: 3 # In seconds
+  stage: dev # default stage
+  profile: mk-personal
+  versionFunctions: false
   apiGateway:
     minimumCompressionSize: 1024 # Enable gzip compression for responses > 1 KB
   environment:
