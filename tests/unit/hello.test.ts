@@ -7,12 +7,18 @@ describe('basic unit test framework', () => {
     expect(1).toBe(1);
   });
 
-  it('can call lambda', async done => {
+  it('can call lambda', async () => {
+      // Arrange
       const event = {} as APIGatewayProxyEvent;
       const context = {} as Context;
-      let thing = await handler(event,context,() => {}) as APIGatewayProxyResult
-      expect(JSON.parse(thing.body).message).toBe("Go Serverless Webpack (Typescript) v1.0! Your function executed successfully!");
-      done();
+      const expected = "Go Serverless Webpack (Typescript) v1.0! Your function executed successfully!"
+
+      // Act
+      const proxy_result = await handler(event,context,() => {}) as APIGatewayProxyResult
+      const message =  JSON.parse(proxy_result.body).message
+
+      // Assert
+      expect(message).toBe(expected);
   });
 
 });
