@@ -19,7 +19,7 @@ env.yml
 
 # Editor settings
 .idea
-.vscode
+#.vscode
 
 # Ignore compiled js files only
 *.js
