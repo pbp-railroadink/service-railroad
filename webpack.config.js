@@ -12,7 +12,7 @@ module.exports = {
     extensions: ['.mjs', '.json', '.ts'],
     symlinks: false,
     cacheWithContext: false,
-      alias: {
+    alias: {
       '@src': path.resolve(__dirname, './src'),
     },
   },
