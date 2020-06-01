@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "alwaysStrict": true,
     "lib": ["es2017"],
     "removeComments": true,
@@ -9,7 +10,10 @@
     "noUnusedParameters": true,
     "sourceMap": true,
     "target": "es2017",
-    "outDir": "lib"
+    "outDir": "lib",
+    "paths": {
+      "@src/*": ["src/*"]
+    }
   },
   "include": ["./**/*.ts"],
   "exclude": [

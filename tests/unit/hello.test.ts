@@ -1,4 +1,4 @@
-import {handler} from '../../src/hello'
+import { handler } from '@src/hello'
 import { APIGatewayProxyEvent, Context, APIGatewayProxyResult } from 'aws-lambda';
 
 describe('basic unit test framework', () => {
