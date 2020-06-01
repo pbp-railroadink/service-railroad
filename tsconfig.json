@@ -1,7 +1,9 @@
 {
   "compilerOptions": {
+    "alwaysStrict": true,
     "lib": ["es2017"],
     "removeComments": true,
+    "module": "commonjs",
     "moduleResolution": "node",
     "noUnusedLocals": true,
     "noUnusedParameters": true,
