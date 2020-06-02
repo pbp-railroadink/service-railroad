@@ -22,7 +22,7 @@ jobs:
           CI: TRUE
 
       - name: Test Code
-        run: npm run test
+        run: npm run test:ci
         continue-on-error: true
 
       - name: Save Code testing Report JSON
