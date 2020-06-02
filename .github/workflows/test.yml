@@ -31,3 +31,4 @@ jobs:
         if: always() # Or use "continue-on-error: true" in previous test step
         with:
           access-token: ${{ secrets.GITHUB_TOKEN }}
+          run-name: run-tests
