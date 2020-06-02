@@ -28,7 +28,6 @@ jobs:
         continue-on-error: true
 
       - uses: IgnusG/jest-report-action@v2.3.1
-        if: always() # Or use "continue-on-error: true" in previous test step
         with:
           access-token: ${{ secrets.GITHUB_TOKEN }}
           run-name: Run tests
