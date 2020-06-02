@@ -11,7 +11,7 @@
     "npm-update": "npx npm-check-updates",
     "remote:hello": "npx serverless invoke --function hello --path events/hello.json",
     "tail:hello:dev": "npx serverless logs --function hello --tail --stage dev --aws-profile mk-personal",
-    "test:ci": "jest --ci --colors --coverage --passWithNoTests",
+    "test:ci": "jest --ci --colors --coverage",
     "test": "jest --watchAll --colors --coverage"
   },
   "dependencies": {
