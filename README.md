@@ -1,7 +1,7 @@
 # service-railroad
 
-![Linting](https://github.com/pbp-railroadink/service-railroad/workflows/Linting/badge.svg)
-![Tests](https://github.com/pbp-railroadink/service-railroad/workflows/Tests/badge.svg)
+[![Linting](https://github.com/pbp-railroadink/service-railroad/workflows/Linting/badge.svg)](https://github.com/pbp-railroadink/service-railroad/actions?query=workflow%3ALinting)
+[![Tests](https://github.com/pbp-railroadink/service-railroad/workflows/Tests/badge.svg)](https://github.com/pbp-railroadink/service-railroad/actions?query=workflow%3ATests)
 
 ## Development
 
