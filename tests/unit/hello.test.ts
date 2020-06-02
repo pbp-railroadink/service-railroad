@@ -14,7 +14,7 @@ describe('basic unit test framework', () => {
     const callback = () => {
       null;
     };
-    const expected = 'Go Serverless Webpack (Typescript) v1.0! Your function executed not-goodly!';
+    const expected = 'Go Serverless Webpack (Typescript) v1.0! Your function executed successfully!';
 
     // Act
     const proxyResult = await handler(event, context, callback) as APIGatewayProxyResult;
