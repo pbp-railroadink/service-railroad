@@ -3,15 +3,15 @@ module.exports = {
   moduleFileExtensions: [
     'ts',
     'tsx',
-    'js'
+    'js',
   ],
   transform: {
-    '^.+\\.(ts|tsx)$': 'ts-jest'
+    '^.+\\.(ts|tsx)$': 'ts-jest',
   },
   testMatch: [
-    '**/?(*.)(spec|test).(ts|tsx|js)?(x)'
+    '**/?(*.)(spec|test).(ts|tsx|js)?(x)',
   ],
   moduleNameMapper: {
-    '^@src/(.*)$': '<rootDir>/src/$1'
-  }
+    '^@src/(.*)$': '<rootDir>/src/$1',
+  },
 };

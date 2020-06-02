@@ -21,6 +21,6 @@ module.exports = {
     '@typescript-eslint',
   ],
   'rules': {
-    'max-len': [ 'error', 120 ]
+    'max-len': ['error', 120],
   },
 };
