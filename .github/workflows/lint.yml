@@ -1,0 +1,42 @@
+name: Linting
+
+on: [push]
+
+jobs:
+  run-linters:
+    name: Run Linters
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out Git repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+
+      - name: Install Node.js dependencies
+        uses: bahmutov/npm-install@v1
+
+      - name: Test Code Linting
+        run: npm run lint
+        if: always()
+
+      - name: Save Code Linting Report JSON
+        run: npm run lint:report
+        if: always()
+
+      - name: Annotate Code Linting Results
+        uses: ataylorme/eslint-annotate-action@1.1.1
+        if: always()
+        with:
+          repo-token: "${{ secrets.GITHUB_TOKEN }}"
+          report-json: "eslint_report.json"
+
+      - name: Upload ESLint report
+        uses: actions/upload-artifact@v1
+        if: always()
+        with:
+          name: eslint_report.json
+          path: eslint_report.json
