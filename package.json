@@ -13,6 +13,7 @@
     "remote:hello": "npx serverless invoke --function hello --path events/hello.json",
     "tail:hello:dev": "npx serverless logs --function hello --tail --stage dev --aws-profile mk-personal",
     "test:ci": "jest --ci --colors --coverage",
+    "test:report": "jest --ci --reporters=default --reporters=jest-junit",
     "test": "jest --watchAll --colors --coverage"
   },
   "dependencies": {
@@ -29,6 +30,7 @@
     "fork-ts-checker-webpack-plugin": "^4.1.6",
     "jest": "^26.0.1",
     "jest-cucumber": "^2.0.11",
+    "jest-junit": "^10.0.0",
     "serverless-webpack": "^5.3.2",
     "ts-jest": "^26.1.0",
     "ts-loader": "^7.0.5",
