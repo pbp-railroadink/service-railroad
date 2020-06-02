@@ -42,7 +42,7 @@
   "license": "MIT",
   "jest-junit": {
     "suiteNameTemplate": "{filepath}",
-    "classNameTemplate": "{classpath}",
+    "classNameTemplate": "{classname}",
     "titleTemplate": "{title}",
     "usePathForSuiteName": "true"
   }
