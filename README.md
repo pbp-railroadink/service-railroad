@@ -1,5 +1,8 @@
 # service-railroad
 
+![Linting](https://github.com/pbp-railroadink/service-railroad/workflows/Linting/badge.svg)
+![Tests](https://github.com/pbp-railroadink/service-railroad/workflows/Tests/badge.svg)
+
 ## Development
 
 ### Module Aliases

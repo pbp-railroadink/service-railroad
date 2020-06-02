@@ -28,3 +28,6 @@ env.yml
 !webpack.config.js
 !source-map-install.js
 !.eslintrc.js
+
+# reports
+eslint_report.json

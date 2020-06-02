@@ -6,7 +6,8 @@
   "scripts": {
     "deploy:hello": "npx serverless deploy function -f hello --aws-profile mk-personal",
     "deploy": "npx serverless deploy --aws-profile mk-personal",
-    "lint": "eslint '**/*.{js,ts,tsx}' --quiet",
+    "lint": "eslint '**/*.{js,ts,tsx}'",
+    "lint:report": "eslint '**/*.{js,ts,tsx}' --output-file eslint_report.json --format json",
     "local:hello": "npx serverless invoke local --function hello --path events/hello.json",
     "npm-update": "npx npm-check-updates",
     "remote:hello": "npx serverless invoke --function hello --path events/hello.json",

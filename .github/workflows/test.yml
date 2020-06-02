@@ -1,0 +1,23 @@
+name: Tests
+
+on: [push]
+
+jobs:
+  run-tests:
+    name: Run tests
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out Git repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+
+      - name: Install Node.js dependencies
+        uses: bahmutov/npm-install@v1
+
+      - name: Test Code
+        run: npm run test:ci
