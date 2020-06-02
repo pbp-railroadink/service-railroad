@@ -31,4 +31,3 @@ env.yml
 
 # reports
 eslint_report.json
-junit.xml

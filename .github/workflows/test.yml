@@ -21,14 +21,3 @@ jobs:
 
       - name: Test Code
         run: npm run test:ci
-        if: always()
-
-      - name: Save Code testing Report JSON
-        run: npm run test:report
-        if: always()
-
-      - uses: IgnusG/jest-report-action@v2.3.1
-        if: always()
-        with:
-          access-token: ${{ secrets.GITHUB_TOKEN }}
-          run-name: Run tests
