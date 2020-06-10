@@ -55,3 +55,4 @@ For jest, modify `jest.config.js`.
 ### Testing
 
 - [TDD for AWS Lambda with Serverless framework and Jest](https://kalinchernev.github.io/tdd-serverless-jest)
+- [cucumber-js with typescript](https://www.elliotdenolf.com/posts/cucumberjs-with-typescript/)
